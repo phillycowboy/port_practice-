@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+*{
+  list-style: none;
+}
 #navbar{
   background-color: grey;
   display: flex;
@@ -46,12 +48,42 @@
   padding-right: 100px;
   padding-left: 100px;
   font-size: 12px;
+  font-weight: 900;
   background-color: whitesmoke;
   box-shadow: 0 20px 20px -6px black; 
 }
 #about h1{
   color: aqua;
   text-shadow: 2px 2px grey;
+}
+#contact{
+  border-right: 20px solid aqua;
+  border-top: 5px solid aqua;
+  border-bottom: 5px solid aqua;
+  border-radius: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: whitesmoke;
+  box-shadow: 0 12px 20px -6px black;
+  width: auto;
+}
+#contact h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+  text-shadow: 2px 2px grey;
+
+}
+#contact li {
+  display: inline-flex;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#icon{
+  padding-right: 15px;
+  color: aqua;
 }
 /* #about-style-div{
   background-color: aqua;
