@@ -31,6 +31,7 @@ const Projects = ({project}) =>{
                             <button onClick={() => setIsFlipped((prev) => !prev)}>Info</button>
                         </div>
                 </ReactCardFlip>
+                // maybe add back in onMouseEnter and onMouseLeave
         )
 
 }
