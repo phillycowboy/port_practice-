@@ -20,7 +20,13 @@
   padding-right: 15px;
   font-size: 35px;
   color: purple;
+  
 }
+/* #navbar ul li:hover{
+  transition: all .2s ease-in-out !important; 
+  transform: scale(1) !important;
+  color: red;
+} */
 #home-div{
   padding-top: 200px;
 }
@@ -37,6 +43,9 @@
   padding-top: 200px;
   padding-right:100px;
   padding-left: 100px;
+  display: center;
+  justify-content: center;
+  align-items: center;
 }
 #contact-div{
   padding-top: 200px;
@@ -96,10 +105,15 @@
   border-radius: 10px;
   padding-right: 100px;
   padding-left: 100px;
+  margin-bottom: 30px;
   font-size: 12px;
   font-weight: 900;
   background-color: whitesmoke;
   box-shadow: 0 20px 20px -6px black; 
+}
+#projects:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 /* #about-style-div{
   background-color: aqua;

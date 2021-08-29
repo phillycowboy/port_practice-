@@ -9,6 +9,7 @@ class Nav extends Component{
                     <NavLink
                     exact 
                     to="/"
+                    style={{textDecorationLine: "none"}}
                     >
                         Home
                     </NavLink>
@@ -17,6 +18,8 @@ class Nav extends Component{
                         <NavLink 
                         exact 
                         to="/about"
+                        style={{textDecorationLine: "none"}}
+
                         >
                             About
                         </NavLink>
@@ -25,6 +28,8 @@ class Nav extends Component{
                         <NavLink 
                         exact
                         to="/projects"
+                        style={{textDecorationLine: "none"}}
+
                         >
                             Projects
                         </NavLink>
@@ -33,6 +38,8 @@ class Nav extends Component{
                         <NavLink
                         exact
                         to="/contact"
+                        style={{textDecorationLine: "none"}}
+
                         >
                             Contact
                         </NavLink>
