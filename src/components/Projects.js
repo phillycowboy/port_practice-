@@ -1,14 +1,14 @@
 import React from 'react'
 // import projectsData from '../assests/data/projectsData.json'
 import ReactCardFlip from 'react-card-flip';
-const Projects = (props) =>{
-    // console.log(props)
-    // constructor(){
-    //     super()
-    //     this.state = {
-    //         isFlipped: false
-    //     }
-    // }
+const Projects = ({project}) =>{
+    console.log(project)
+
+    const [isFlipped, setIsFlipped] = React.useState(false)
+        // this.state = {
+        //     isFlipped: false
+        // }
+    
 
     // handleClick = (e) => {
     //     e.preventDefault();
@@ -19,21 +19,18 @@ const Projects = (props) =>{
     // }
 
         return(
-            // projectsData.map(p => 
-                // console.log(p)
-                <ReactCardFlip isFlipped={props.flipped} flipDirection="horizontal">
-                        <div className="projects">
-                            <h1>{props.projectName}</h1>
+                <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+                        <div className="projects" >
+                            <h1>{project.projectName}</h1>
                             <h4>Add an image here from the project</h4>
-                            <h4>Built With: {props.languages}</h4>
-                            <button onClick={props.handleClick}>Links</button>
+                            <h4>Built With: {project.languages}</h4>
+                            <button onClick={() => setIsFlipped((prev) => !prev)}>Links</button>
                         </div>
-                        <div className="projects-back">
-                            <a href={props.githubLink}><i class="fab fa-github"></i></a>|<a href={props.youtubeLink}><i class="fab fa-youtube"></i></a>
-                            <button onClick={props.handleClick}>Info</button>
+                        <div className="projects-back" >
+                            <a href={project.githubLink}><i class="fab fa-github"></i></a>|<a href={project.youtubeLink}><i class="fab fa-youtube"></i></a>
+                            <button onClick={() => setIsFlipped((prev) => !prev)}>Info</button>
                         </div>
                 </ReactCardFlip>
-            // )
         )
 
 }

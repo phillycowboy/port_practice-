@@ -4,25 +4,25 @@ import Projects from '../components/Projects'
 import projectsData from '../assests/data/projectsData.json' 
 
 class ProjectsContainer extends Component{
-    constructor(){
-    super()
-        this.state = {
-            isFlipped: false
-        }
-    }
-    handleClick = (e) => {
-        e.preventDefault();
-        this.setState((prevState) => ({
-            isFlipped: !prevState.isFlipped
-        }))
-        console.log(e)
-    }
+    // constructor(){
+    // super()
+    //     this.state = {
+    //         isFlipped: false
+    //     }
+    // }
+    // handleClick = (e) => {
+    //     e.preventDefault();
+    //     this.setState((prevState) => ({
+    //         isFlipped: !prevState.isFlipped
+    //     }))
+    //     console.log(e)
+    // }
     render(){
         return(
-            projectsData.map((p) => {
-                console.log(p)
+            projectsData.map((project, index) => {
+                // console.log(p)
                 return <div id="projects-div">
-                        <Projects handleClick={this.handleClick} flipped={this.state.isFlipped} key={p.id} projectName={p.projectName} languages={p.languages} githubLink={p.githubLink} youtubeLink={p.youtubeLink}/> 
+                        <Projects key={index} project={project} /> 
                 </div>
 
 
