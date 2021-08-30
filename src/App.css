@@ -32,8 +32,8 @@
 }
 #about-div{
   padding-top: 200px; 
-  padding-right:100px;
-  padding-left: 100px;
+  padding-right:250px;
+  padding-left: 250px;
   /* position: relative; */
   /* background-color: aqua; */
   /* margin-left: -20px; */
@@ -41,8 +41,8 @@
 }
 #projects-div{
   padding-top: 200px;
-  padding-right:100px;
-  padding-left: 100px;
+  padding-right:250px;
+  padding-left: 250px;
   display: center;
   justify-content: center;
   align-items: center;
@@ -105,13 +105,43 @@
   border-radius: 10px;
   padding-right: 100px;
   padding-left: 100px;
-  margin-bottom: 30px;
+  margin-bottom: -70px;
   font-size: 12px;
   font-weight: 900;
   background-color: whitesmoke;
   box-shadow: 0 20px 20px -6px black; 
+  
 }
-#projects:hover{
+.projects h1{
+  color: aqua;
+  text-shadow: 2px 2px grey;
+
+}
+.projects-back{
+  border-left: 20px solid aqua;
+  border-top: 5px solid aqua;
+  border-bottom: 5px solid aqua;
+  border-radius: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  height: 150px;
+  margin-bottom: -70px;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: whitesmoke;
+  box-shadow: 0 20px 20px -6px black;
+}
+.projects-back i{
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 38px;
+  color: aqua;
+}
+.projects:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+.projects-back:hover{
   transition: all .2s ease-in-out;
   transform: scale(1.1);
 }

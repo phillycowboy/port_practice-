@@ -27,8 +27,8 @@ const Projects = ({project}) =>{
                             <button onClick={() => setIsFlipped((prev) => !prev)}>Links</button>
                         </div>
                         <div className="projects-back" >
-                            <a href={project.githubLink}><i class="fab fa-github"></i></a>|<a href={project.youtubeLink}><i class="fab fa-youtube"></i></a>
-                            <button onClick={() => setIsFlipped((prev) => !prev)}>Info</button>
+                            <a href={project.githubLink}><i class="fab fa-github"></i></a>|<a href={project.youtubeLink}><i class="fab fa-youtube"></i></a><br></br>
+                            <button onClick={() => setIsFlipped((prev) => !prev)}>Back</button>
                         </div>
                 </ReactCardFlip>
                 // maybe add back in onMouseEnter and onMouseLeave
