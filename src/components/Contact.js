@@ -11,7 +11,7 @@ class Contact extends Component{
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div id="data">
-                            benhartermurphy@gmail.com
+                            <a href="mailto:benhartermurphy@gmail.com" target="_blank" rel="noopener noreferrer">benhartermurphy@gmail.com</a>
                         </div>
                     </li><br/>
                     <li>
